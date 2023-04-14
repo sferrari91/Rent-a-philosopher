@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+socrates = Philosopher.create!(
+  name: "socrates",
+  quote: "hey hey",
+  age: 30
+)
+
+aristoteles = Philosopher.create!(
+  name: "aristoteles",
+  quote: "buuu",
+  age: 150
+)
