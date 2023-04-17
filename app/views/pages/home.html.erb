@@ -5,4 +5,18 @@
   </div>
 </div>
 
+
+<h4>Take a look at the most popular philosophers</h4>
+
+<% @philosophers.sample(4).each do |philosopher| %>
+  <div class="card-product">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+      <h2><%= link_to philosopher.name, philosopher_path(philosopher) %></h2>
+      <p>Product description with <strong>relevant info</strong> only.</p>
+    </div>
+  </div>
+<% end %>
+
+
 <h4>See the available philosophers <%= link_to "all philosophers", philosophers_path %></h4>

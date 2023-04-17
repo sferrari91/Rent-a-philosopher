@@ -5,8 +5,8 @@ class PhilosophersController < ApplicationController
   end
 
   def show
-    @philosopher = Philosoher.show(params[:id])
+    @philosopher = Philosopher.find(params[:id])
+    @reservation = Reservation.new
   end
-
 
 end
