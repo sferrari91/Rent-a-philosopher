@@ -10,8 +10,11 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
   </head>
-
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <%= render "components/navbar" %>
+      <%= yield %>
+      <%= render "components/footer" %>
+    </div>
   </body>
 </html>
